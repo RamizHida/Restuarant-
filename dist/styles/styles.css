@@ -1,0 +1,107 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  padding: 0 2rem;
+  color: #000;
+  gap: 2rem;
+  justify-content: left;
+  background-color: blanchedalmond;
+}
+
+.nav h1 {
+  justify-content: left;
+  margin-right: auto;
+}
+
+.nav h2 {
+  font-size: 3rem;
+}
+
+.nav h2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: ease-in-out 0.2s;
+  color: #ff6900;
+}
+
+/* About Section */
+
+#chef {
+  width: 400px;
+  display: inline;
+}
+
+.beach {
+  display: flex;
+  flex-direction: column;
+}
+
+#beach-img {
+  height: 70rem;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro p {
+  font-size: 3rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0;
+}
+
+#rest-desc {
+  align-self: center;
+  margin-left: 2rem;
+}
+
+.title,
+.name {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.secret {
+  color: red;
+}
+
+div h2 {
+  font-size: 3rem;
+}
+
+/* Menu */
+.menu {
+  display: grid;
+  padding-bottom: 2.5rem;
+  border-radius: 5px;
+  width: 100%;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  background: blanchedalmond;
+}
+
+.menu-img {
+  width: 40.5rem;
+  height: 30rem;
+}
+
+.menu-img:hover {
+  scale: 1.05;
+  transition: ease-in-out 0.3s;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #000;
+}
