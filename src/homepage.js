@@ -1,16 +1,18 @@
-let content = document.querySelector("#content");
+import { menuDiv, menuTitle } from "./menu";
+
+export let content = document.querySelector("#content");
 
 // Adding and styline Nav Bar //
 let nav = document.createElement("nav");
 nav.classList.add("nav");
-let navH1 = document.createElement("h1");
+export let navH1 = document.createElement("h1");
 navH1.textContent = "Betim's Bureks!";
 navH1.classList.add("title");
 
-let navH2menu = document.createElement("h2");
+export let navH2menu = document.createElement("h2");
 navH2menu.textContent = "Menu";
 
-let navH2Contact = document.createElement("h2");
+export let navH2Contact = document.createElement("h2");
 navH2Contact.textContent = "Contact";
 
 nav.append(navH1, navH2menu, navH2Contact);
@@ -66,7 +68,7 @@ beachImg.alt =
 beachDiv.append(beachDivH3, beachImg);
 
 // Add and styling a footer //
-let footer = document.createElement("footer");
+export let footer = document.createElement("footer");
 footer.classList.add("footer");
 // footer.textContent = "Ramiz";
 let footerIcon = document.createElement("img");
