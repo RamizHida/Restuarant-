@@ -1,3 +1,3 @@
-import pageLoad from "../src/homepage";
+import { loadPage } from "./homepage";
 
-pageLoad();
+loadPage();

@@ -79,6 +79,28 @@ div h2 {
   font-size: 3rem;
 }
 
+/* Footer */
+.footer {
+  padding: 0.5rem 0;
+  width: 100%;
+  background-color: blanchedalmond;
+  height: 4rem;
+  margin-top: 1rem;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+#footer {
+  width: 4rem;
+  height: 4rem;
+}
+
+#footer:hover {
+  transform: rotate(360deg);
+  transition: ease-in-out 0.4s;
+}
+
 /* Menu */
 .menu {
   display: grid;

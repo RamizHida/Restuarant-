@@ -37,7 +37,7 @@ introDiv1.append(introDiv1H2, introDiv1Img);
 
 // Intro Div 2
 let intoDiv2 = document.createElement("div");
-intoDiv2.classList.add("rest-desc");
+intoDiv2.setAttribute("id", "rest-desc");
 
 let introDiv2span = document.createElement("span");
 introDiv2span.classList.add("secret");
@@ -52,6 +52,7 @@ mainIntroDiv.append(introDiv1, intoDiv2);
 
 // Adding and styling last div section, which is beach //
 let beachDiv = document.createElement("div");
+beachDiv.classList.add("beach");
 let beachDivH3 = document.createElement("h3");
 beachDivH3.classList.add("title");
 beachDivH3.textContent = "Where You Will Be Eating";
@@ -64,8 +65,22 @@ beachImg.alt =
 
 beachDiv.append(beachDivH3, beachImg);
 
+// Add and styling a footer //
+let footer = document.createElement("footer");
+footer.classList.add("footer");
+// footer.textContent = "Ramiz";
+let footerIcon = document.createElement("img");
+let link = document.createElement("a");
+link.setAttribute("href", "https://github.com/RamizHida");
+link.setAttribute("target", "_blank");
+footerIcon.id = "footer";
+footerIcon.src = "../src/images/github.png";
+link.append(footerIcon);
+// footer.append(footerIcon, link);
+footer.append(link);
+
 // Appending all sections//
-content.append(nav, mainIntroDiv, beachDiv);
+content.append(nav, mainIntroDiv, beachDiv, footer);
 
 export function loadPage() {
   return content;
