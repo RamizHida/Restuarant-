@@ -1,5 +1,3 @@
-import { menuDiv, menuTitle } from "./menu";
-
 export let content = document.querySelector("#content");
 
 // Adding and styline Nav Bar //
@@ -18,7 +16,7 @@ navH2Contact.textContent = "Contact";
 nav.append(navH1, navH2menu, navH2Contact);
 
 // Adding and styling Intro //
-let mainIntroDiv = document.createElement("div");
+export let mainIntroDiv = document.createElement("div");
 mainIntroDiv.classList.add("intro");
 // Intro Div 1
 let introDiv1 = document.createElement("div");
@@ -53,7 +51,7 @@ intoDiv2.append(introDiv2para);
 mainIntroDiv.append(introDiv1, intoDiv2);
 
 // Adding and styling last div section, which is beach //
-let beachDiv = document.createElement("div");
+export let beachDiv = document.createElement("div");
 beachDiv.classList.add("beach");
 let beachDivH3 = document.createElement("h3");
 beachDivH3.classList.add("title");

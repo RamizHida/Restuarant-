@@ -26,7 +26,8 @@ html {
   font-size: 3rem;
 }
 
-.nav h2:hover {
+.nav h2:hover,
+.nav h1:hover {
   cursor: pointer;
   scale: 1.1;
   transition: ease-in-out 0.2s;
@@ -131,9 +132,10 @@ div h2 {
 /* Form */
 
 input {
-  width: 50%;
+  width: 70%;
   height: 3rem;
   border: none;
+  padding: 5px;
   font-size: 1.6rem;
 }
 
@@ -174,7 +176,7 @@ button:hover {
 form {
   width: 30rem;
   font-size: 3rem;
-  height: 32rem;
+  height: 37rem;
   display: flex;
   padding: 10px;
   border-radius: 5px;
