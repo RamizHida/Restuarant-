@@ -1,4 +1,7 @@
 export let content = document.querySelector("#content");
+import chefPhoto from "./images/chef-betim.png";
+import beachPhoto from "./images/balkan-beach.png";
+import gitPhoto from "./images/github.png";
 
 // Adding and styline Nav Bar //
 let nav = document.createElement("nav");
@@ -30,7 +33,8 @@ introDiv1H2.textContent = ` ${introDiv1span.textContent}: Restaurant Owner`;
 
 let introDiv1Img = document.createElement("img");
 introDiv1Img.id = "chef";
-introDiv1Img.src = "../src/images/chef-betim.png";
+introDiv1Img.src = chefPhoto;
+
 introDiv1Img.alt = "A picture of a chef";
 
 introDiv1.append(introDiv1H2, introDiv1Img);
@@ -59,7 +63,7 @@ beachDivH3.textContent = "Where You Will Be Eating";
 
 let beachImg = document.createElement("img");
 beachImg.id = "beach-img";
-beachImg.src = "../src/images/balkan-beach.png";
+beachImg.src = beachPhoto;
 beachImg.alt =
   "A picture of an old Balkan style building near a body of water and a valley next to it";
 
@@ -74,7 +78,7 @@ let link = document.createElement("a");
 link.setAttribute("href", "https://github.com/RamizHida");
 link.setAttribute("target", "_blank");
 footerIcon.id = "footer";
-footerIcon.src = "../src/images/github.png";
+footerIcon.src = gitPhoto;
 link.append(footerIcon);
 // footer.append(footerIcon, link);
 footer.append(link);
